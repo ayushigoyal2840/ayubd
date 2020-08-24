@@ -188,12 +188,12 @@ main .site-title{
  
    border-radius: 50%;
     transition: all 1s ease-in-out;
-    opacity: 0.5;
+    opacity: 1;
 }
 main .site-title:hover{
     opacity: 1;
     transform: rotate(360deg) ;
-    transition: rgb(231, 200, 64) 1s;
+    transition: rgb(231, 200, 64) 10s;
     
     
 }
@@ -244,9 +244,41 @@ main .site-title .btn:hover{
 /* --------x------ Site title --------x------- */
 
 /* --------------- Blog Carousel ------------ */
+#about
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: rgb(56, 55, 55);
+   
+}
+#about .btn 
+{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.about-content
+{
+    padding-top: 30px;
+}
+.skills-bar p{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress-bar
+{
+    border-radius: 16px!important;
+    margin-bottom: 20px;
+    box-shadow: 2px;
+    border-color: black !important;
+}
+.progress-bar:hover
+{
+    border-radius: 16px!important;
+    margin-bottom: 20px;
+    color: rgb(235, 227, 227) !important;
+}
 
 main .blog{
-    background: url('../assets/Abract01.png');
     background-repeat: no-repeat;
     background-position: right;
     height: 100vh;
@@ -302,6 +334,66 @@ section .container .owl-nav{
 
 .owl-theme .owl-nav [class*='owl-']{
     outline: none;
+}
+#services
+{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../Screenshot\ \(13\).png);
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#services h1
+{
+    text-align: center;
+    color: #f6f2f2 !important;
+    padding-bottom: 10px;
+}
+#services h1::after{
+    content: '';
+    background: #e9dfdf !important;
+    display: block;
+    height: 2px;
+    width: 220px;
+    margin: 10px auto 5px;
+}
+#services h1:hover
+{
+    color: rgb(61, 45, 202) !important;
+    
+
+}
+.services
+{
+    margin-top: 40px;
+}
+
+.icon{
+    font-size: 40px;
+    margin: 2px auto;
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid rgb(244, 243, 246);
+    border-radius: 50%;
+   
+}
+#services p
+{
+font-size: 15px;
+margin-top: 20px;
+color: rgb(233, 232, 240);
+}
+
+.services .col-md-4:hover{
+    background: #607ebb;
+    cursor: pointer;
+    transition: ease 0.7s;
+    border: 1px rgb(202, 197, 197);
+    box-shadow: #25394e;
+   border-radius: 30%;
 }
 
 
@@ -463,6 +555,18 @@ main .post-content .post-title a{
 
 
 /* ----------------- Footer --------------------- */
+.popular-tags .tags .tag 
+{
+    font-size: 1.3rem;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightgray;
+    width: fit-content;
+    margin: 20px;
+    border: 5px solid rgb(94, 86, 202);
+    border-radius: 0%;
+
+}
 
 footer.footer{
     height: 100%;
@@ -525,6 +629,11 @@ footer.footer .rights{
 
 footer.footer .rights h4 a{
     color: var(--white);
+}
+footer.footer .rights h2{
+    color: rgb(48, 175, 197);
+    font-family: var(--Josefin);
+    
 }
 
 footer.footer .move-up{
